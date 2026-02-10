@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Outfit:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  </head>
+  <body>
+    <!-- Stars -->
+    <div class="stars"></div>
+    <div class="stars2"></div>
+
+    <!-- Moon -->
+    <div class="moon">
+      <div class="moon-crater crater-1"></div>
+      <div class="moon-crater crater-2"></div>
+      <div class="moon-crater crater-3"></div>
+    </div>
+
+    <!-- Aurora -->
+    <div class="aurora">
+      <div class="aurora-band aurora-1"></div>
+      <div class="aurora-band aurora-2"></div>
+      <div class="aurora-band aurora-3"></div>
+    </div>
+
+    <!-- Snowflakes -->
+    <div class="snow-container" id="snowContainer"></div>
+
+    <!-- Mountains -->
+    <div class="mountains">
+      <div class="mountain mountain-far"></div>
+      <div class="mountain mountain-back"></div>
+      <div class="mountain mountain-mid"></div>
+      <div class="mountain mountain-front"></div>
+    </div>
+
+    <!-- Trees -->
+    <div class="trees">
+      <div class="tree" style="left: 3%; bottom: 0; transform: scale(1.1)">
+        <div class="tree-snow"></div>
+        <div class="tree-top"></div>
+        <div class="tree-mid"></div>
+        <div class="tree-trunk"></div>
+      </div>
+      <div class="tree" style="left: 9%; bottom: 0; transform: scale(0.75)">
+        <div class="tree-snow"></div>
+        <div class="tree-top"></div>
+        <div class="tree-mid"></div>
+        <div class="tree-trunk"></div>
+      </div>
+      <div class="tree" style="left: 15%; bottom: 0; transform: scale(0.9)">
+        <div class="tree-snow"></div>
+        <div class="tree-top"></div>
+        <div class="tree-mid"></div>
+        <div class="tree-trunk"></div>
+      </div>
+      <div class="tree" style="right: 4%; bottom: 0; transform: scale(1)">
+        <div class="tree-snow"></div>
+        <div class="tree-top"></div>
+        <div class="tree-mid"></div>
+        <div class="tree-trunk"></div>
+      </div>
+      <div class="tree" style="right: 11%; bottom: 0; transform: scale(0.7)">
+        <div class="tree-snow"></div>
+        <div class="tree-top"></div>
+        <div class="tree-mid"></div>
+        <div class="tree-trunk"></div>
+      </div>
+      <div class="tree" style="right: 17%; bottom: 0; transform: scale(0.85)">
+        <div class="tree-snow"></div>
+        <div class="tree-top"></div>
+        <div class="tree-mid"></div>
+        <div class="tree-trunk"></div>
+      </div>
+    </div>
+
+    <!-- Snow Ground -->
+    <div class="ground"></div>
+
+    <!-- Main Content -->
+    <main class="content" id="mainContent">
+      <div class="emoji-header">⛷️</div>
+      <h1 class="title">
+        Will you be my Valentine<br />&amp; hit the slopes with me?
+      </h1>
+      <p class="subtitle">Pack your warmest smile and lets go! 🏔️</p>
+      <div class="button-area">
+        <button class="btn btn-yes" id="yesBtn">
+          <span class="btn-glow"></span>
+          Yes, let's go! 🎿
+        </button>
+        <button class="btn btn-no" id="noBtn">Hmm, no 🥶</button>
+      </div>
+      <p class="no-message hidden" id="noMessage"></p>
+    </main>
+
+    <!-- Celebration -->
+    <main class="content hidden" id="celebration">
+      <div class="emoji-header celebration-emoji">🥰</div>
+      <h1 class="title celebration-title">Yayyy!</h1>
+      <p class="subtitle celebration-sub">
+        See you on the mountain, my love! ❤️🏔️
+      </p>
+      <p class="date-text">Valentine's Day 2026 · 🎿</p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
